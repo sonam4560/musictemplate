@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+   
+</head>
+<body>
+        <header>
+            <div class="container">
+                <div class="header_nav">
+                    <div class="logo_nav">
+                      <h1> musical</h1>
+                    </div>
+                    <div class="right_nav">
+                        <ul>
+                            <li><a href="">home</a></li>
+                            <li><a href="">services</a></li>
+                            <li><a href="">blogs</a></li>
+                            <li><a href="">pages</a></li>
+                            <li><a href=""> gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="bar_btn">
+                        <button class="display-menu">
+                            <span class="fa-solid fa-bars"></span>
+
+                        </button>
+                    </div>
+                    <div class="theme_btn">
+                        <span class="fa-solid fa-moon"></span>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </header>
+        <!-- <link rel="stylesheet" href="task.js"> -->
+
+
+        <script>
+            let icon = document.querySelector(".fa-moon");
+            let bgcolor = document.querySelector("body");
+
+              icon.addEventListener("click",function(){
+                bgcolor.classList.toggle("dark-theme");
+
+                 if(bgcolor.classList.contains("dark-theme")==true){
+                    icon.classList.remove("fa-moon");
+                 icon.innerHTML="<span class='fa-solid fa-sun'></span>";
+                }
+                 else {
+                    icon.classList.remove("fa-sun");
+                icon.innerHTML="<span class='fa-solid fa-moon'></span>";
+
+              }
+
+             });
+
+                let displaymenu= document.querySelector(".display-menu");
+                let rightnav= document.querySelector(".right_nav")
+
+                displaymenu.addEventListener("click",function(){
+                    rightnav.classList.toggle("menu")
+
+                })
+
+
+
+        </script>
+
+
+<script>
+
+</script>
+</body>
+</html>

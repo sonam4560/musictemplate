@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="form1">
+    <div>
+        <label for=""> email</label>
+        <input type="email" name="text1">
+        <span id="message"></span>
+        <br>
+        <br>
+
+
+        <div>
+            <label for=""> password:</label>
+            <input type="password" name="password" id="password">
+            <label for=""> show password</label>
+            <input type="checkbox" onclick="valid_pass()">
+            <span id="password_mess"></span>
+
+        </div>
+     <br>
+    <button  type="submit" onclick="  return form_valid()">  click here</button>
+        
+    </div>
+</form>
+
+    <script>
+
+  
+
+
+  
+
+function form_valid(){
+    // email
+
+    let email= document.form1.text1.value;
+    if(email==""){
+        document.getElementById("message").innerHTML="please enter email add";
+        return false;
+        
+    }
+    else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+        document.getElementById("message").innerHTML="wrong";
+
+    return false;
+    }
+    else {
+
+        return  true;
+     }
+     
+
+
+     
+
+let password= document.form1.password.value;
+    if ( password==""){
+    document.getElementById("password_mess").innerHTML="enter password";
+    return false;
+
+    }
+    else if(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/){
+    document.getElementById("password_mess").innerHTML="enter  password 8 to 15 character";
+    return false;
+    
+
+
+    }
+   
+}
+
+
+
+   function valid_pass(){
+    let ckeckp = document.getElementById("password");
+    if (ckeckp.type=="password"){
+        ckeckp.type="text";
+    }
+        else {
+            checkp.type="password";
+        }
+    }
+   
+    </script>
+</body>
+</html>

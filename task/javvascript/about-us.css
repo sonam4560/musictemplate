@@ -1,0 +1,1178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.back-graound-image{
+    height: 500px;
+    background-image: url(img/img3.jpg) ,linear-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.664)) ;
+    /* filter: brightness(110%); */
+    opacity: 95%;
+ background-blend-mode: overlay;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+}
+.top-information-header{
+background-color: rgb(44,50,64);
+display: flex;
+gap: 650px;
+padding: 20px;
+}
+.information-header{
+    display: flex;
+    gap: 20px;
+
+}
+.quection p{
+    font-weight: bold;
+    color: grey;
+
+}
+.call-div span{
+    font-weight: bold;
+    color: white;
+}
+.email-div span{
+    color: white;
+}
+.email-div span a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+
+}
+.social-media-info{
+    display: flex;
+    gap: 20px;
+}
+.social-media-info i{
+    color: white;
+}
+.musical-header{
+    display:flex;
+    gap: 500px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.479);
+
+}
+.nav{
+    display: flex;
+padding-top: 15px;
+gap: 25px;
+text-align: center;
+
+}
+
+ .list{
+    position: relative;
+}
+
+ .menu{
+    position: absolute;
+    top: 30px;
+    left: -30px;
+
+}
+.sublist{
+    padding: 15px;
+    background-color:rgba(0, 0, 0, 0.712);
+    width: 160px;
+    border-radius: 5px;
+    display: none;
+    
+}
+
+.list:hover .sublist{
+    transition: 2s ease all;
+    display: block;
+}
+
+
+.musical-logo{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+.musical-logo span i{
+    color: red;
+}
+
+.musical-header .nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px;
+    transition: 0.6s all ease;
+
+}
+.musical-header .nav li .red{
+    color: red;
+}
+.musical-header .nav li a:hover{
+    color: red;
+}
+.musical-header li{
+    list-style: none;
+}
+.search-btn button{
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.musical-content-hero-img{
+    padding-top: 100px;
+    padding-left: 70px;
+
+}
+.musical-content-hero-img h4{
+    font-size: 20px;
+color: white;
+padding-bottom: 20px;
+}
+.musical-content-hero-img h1{
+padding-bottom: 40px;
+font-size: 75px;
+color: white;
+}
+.musical-content-hero-img button{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: rgba(255, 0, 0, 0.753);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    transition: 0.6s all ease;
+
+}
+.musical-content-hero-img button:hover{
+background-color: skyblue;
+}
+
+
+.about-us-next-section  {
+    padding-top: 150px;
+    padding-left: 580px;
+
+}
+.about-us-next-section h1{
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+        font-family: sans-serif;
+}
+.about-us-next-section p{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================== */
+
+
+@media only screen and (max-width:576px) {
+    .back-graound-image{
+        height: 500px;
+    
+    }
+    .top-information-header{
+    background-color: rgb(44,50,64);
+    display: flex;
+    gap: 80px;
+    padding: 30px;
+    }
+    .information-header{
+        display: flex;
+        gap:15px;
+
+    }
+    .quection p{
+        display: none;
+    }
+    .musical-logo{
+        font-size: 25px;
+    }
+   nav{
+    display: none;
+   }
+
+   .about-us-next-section  {
+    padding-top: 130px;
+    padding-left: 170px;
+
+}
+
+}
+
+@media only screen and (min-width:576px) {
+    .back-graound-image{
+        height: 500px;
+    
+    }
+    .top-information-header{
+    background-color: rgb(44,50,64);
+    display: flex;
+    gap: 80px;
+    padding: 30px;
+    }
+    .information-header{
+        display: flex;
+        gap:15px;
+
+    }
+    .quection p{
+        display: none;
+    }
+    .musical-logo{
+        font-size: 25px;
+    }
+   nav{
+    display: none;
+   }
+
+   .about-us-next-section  {
+    padding-top: 130px;
+    padding-left: 170px;
+
+}
+
+
+}
+@media only screen and (min-width:768px) {
+  
+    .top-information-header{
+    gap: 130px;
+    padding: 20px;
+    }
+    .information-header{
+        gap:15px;
+
+    }
+    .quection p{
+        display: block;
+    }
+    .musical-logo{
+        padding-top: 5px;
+        font-size: 22px;
+    }
+   nav{
+    display: block;
+   }
+
+   .about-us-next-section  {
+    padding-top: 130px;
+    padding-left: 270px;
+
+}
+.musical-header{
+    display:flex;
+    gap: 160px;
+    padding: 15px;
+}
+
+
+
+
+}
+@media only screen and (min-width:992px) {
+  
+    .top-information-header{
+    gap: 330px;
+    padding: 20px;
+    }
+    .information-header{
+        gap:15px;
+
+    }
+    .quection p{
+        display: block;
+    }
+    .musical-logo{
+        padding-top: 5px;
+        font-size: 28px;
+    }
+   nav{
+    display: block;
+   }
+
+   .about-us-next-section  {
+    padding-top: 150px;
+    padding-left: 370px;
+
+}
+.musical-header{
+    display:flex;
+    gap: 350px;
+    padding: 15px;
+}
+
+
+}
+
+@media only screen and (min-width:1200px) {
+    .about-us-next-section  {
+        padding-top: 150px;
+        padding-left: 580px;
+    
+    }
+  
+     .top-information-header{
+        background-color: rgb(44,50,64);
+        display: flex;
+        gap: 650px;
+        padding: 20px;
+        } 
+        .musical-header{
+            display:flex;
+            gap: 500px;
+            padding: 15px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.479);
+        
+        }
+
+}
+ 
+
+                /* ============== */
+                .welcome-to-musical-space{
+                    padding-top: 80px;
+                    padding: 50px;
+                    background-color: rgb(25,33,30);
+                }            
+                .musical-separated-class{
+                    display: flex;
+                    
+                }
+                .musical-left-content-class{
+                    width: 50%;
+                }
+                .musical-right-img-class{
+                    width: 50%;
+                }
+                .musical-left-content-class{
+                    padding: 30px;
+                }
+               .musical-left-content-class span{
+                font-size: 50px;
+                color: white;
+            
+               }
+               .musical-left-content-class .welcome{
+                font-weight: bolder;
+               }
+               .musical-left-content-class .music{
+                font-weight: lighter;
+                font-family: system-ui;
+               }
+              .musical-left-content-class p{
+                color: grey;
+                /* font-weight: bold; */
+                padding-top: 30px;
+                
+            }
+            .know-more-btn{
+                padding-top: 50px;
+            }
+            .know-more-btn button{
+                width: 250px;
+                height: 50px;
+                background-color: rgba(255, 0, 0, 0.884);
+                border-radius: 25px;
+                color:white;
+                border: none;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .musical-right-img-class{
+                padding: 30px;
+            
+                
+            }
+            .musical-right-img-class .right-img{
+                width: 570px;
+                height: 375px;
+                border: 7px solid gray;
+                border-radius: 10px;
+            
+            }
+             .right-img img{
+                width: 550px;
+                border-radius: 10px;
+                height: 430px;
+                padding-top: 50px;
+                margin-left: 40px;
+                margin: -22px;
+                
+            } 
+
+
+            /* ================================ */
+            @media only screen and (max-width:576px) {
+
+                .welcome-to-musical-space{
+                    padding-top: 80px;
+                    padding: 20px;
+                }   
+                .musical-separated-class{
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+            
+                .musical-left-content-class{
+                    width: 100%;
+                }
+            
+                .musical-right-img-class{
+                    padding: 20px;
+            
+                    
+                }
+                .musical-right-img-class .right-img{
+                    width: 500px;
+                    height: 375px;
+            
+                }
+                .right-img img{
+                    width: 480px;
+                    height: 420px;
+                    
+                } 
+            }
+            
+            @media only screen and (min-width:576px) {
+            
+                .welcome-to-musical-space{
+                    padding-top: 80px;
+                    padding: 20px;
+                }   
+                .musical-separated-class{
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+            
+                .musical-left-content-class{
+                    width: 100%;
+                }
+            
+                .musical-right-img-class{
+                    padding: 20px;
+            
+                    
+                }
+                .musical-right-img-class .right-img{
+                    width: 500px;
+                    height: 375px;
+            
+                }
+                .right-img img{
+                    width: 480px;
+                    height: 420px;
+                    
+                } 
+            }
+            
+            @media only screen and (min-width:768px) {
+            
+                .welcome-to-musical-space{
+                    padding-top: 80px;
+                    padding: 20px;
+                }   
+                .musical-separated-class{
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+            
+                .musical-left-content-class{
+                    width: 100%;
+                }
+            
+                .musical-right-img-class{
+                    padding: 30px;
+            
+                    
+                }
+                .musical-right-img-class .right-img{
+                    width: 680px;
+                    height: 375px;
+            
+                }
+                .right-img img{
+                    width: 660px;
+                    height: 430px;
+                    
+                } 
+            }
+            
+            
+            
+            @media only screen and (min-width:992px) {
+                .welcome-to-musical-space{
+                    padding-top: 80px;
+                    padding: 30px;
+                }   
+                .musical-separated-class{
+                    display: flex;
+                    flex-direction: row;
+                    
+                }
+            
+                
+                .musical-left-content-class span{
+                    font-size: 45px;
+                }
+            
+                .musical-right-img-class{
+                    padding: 0px;
+            
+                    
+                }
+                .musical-right-img-class .right-img{
+                    width: 450px;
+                    height: 375px;
+            
+                }
+                .right-img img{
+                    width: 430px;
+                    height: 420px;
+                    
+                } 
+            }
+            
+            
+            @media only screen and (min-width:1200px) {
+                .welcome-to-musical-space{
+                    padding: 40px;
+                    padding-top: 80px;
+                }   
+                .musical-left-content-class{
+                    width: 50%;
+                }
+                .musical-left-content-class span{
+                    font-size: 50px;
+                }
+            
+                .musical-right-img-class .right-img{
+                    width: 570px;
+                    height: 375px;
+            
+                }
+                .right-img img{
+                    width: 550px;
+                    height: 420px;
+                    
+                } 
+            }
+
+
+            /* =============================================================== */
+
+
+
+            .our-expert-musical-section{
+                width: 100%;
+                background-color: rgb(25,33,30);
+                padding: 50px;
+                padding-top: 100px;
+
+            }
+            .our-expert-musical-section-container{
+                width: 90%;
+                margin: 0 auto;
+            }
+            .our-expert-musical-grid-sec{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                object-fit: cover;
+            }
+
+            .our-expert-musical-grid-sec .picture{
+                width: 350px;
+                height: 400px;
+                border-radius: 10px ;
+
+            }
+            .our-musical-content{
+                padding-left: 200px;
+                padding-bottom: 80px;
+            }
+
+            .our-musical-content p{
+                font-size: 50px;
+                
+
+            }
+            .same{
+                font-weight: bold;
+                font-family: sans-serif;
+                color: white;
+
+            }
+            .team{
+                font-weight: lighter;
+                font-family: system-ui;
+                color: white;
+            }
+             
+            .image-content{
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 30px;
+                /* padding: 30px; */
+            }
+
+            .image-content h2{
+                color: white;
+            }
+            .image-content p{
+                color:grey;
+                padding-top: 5px;
+            }
+
+
+
+
+                .picture{
+                    transition: 0.6s all ease;
+                }
+
+
+
+            .text-1{
+                width: 350px;
+                height: 400px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+            }
+            .div-text-h3 i{
+                padding: 10px;
+                background-color: white;
+                border-radius: 50%;
+                
+            }
+          
+           
+            .div-text-h3 {
+             position: absolute;
+             background-color: rgba(0, 0, 0, 0.37);
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+            transform: scale(0);
+            transition:0.8s  all ease;
+            padding-top: 190px;
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+            animation: text-rotate ease infinite;
+            
+            } 
+             .text-1:hover .div-text-h3{ 
+                transform: scale(1) rotateY(360deg);
+        
+             }
+             .text-1:hover .picture{ 
+                transform: scale(1.2);
+        
+             }
+
+
+             /* ==============================media  query======================  */
+              @media only screen and (max-width:576px) {
+                .our-expert-musical-grid-sec{
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    object-fit: cover;
+                }
+                
+                .our-musical-content span  {
+                    font-size: 40px;
+    
+                }
+            }
+                @media only screen and (min-width:576px) {
+                    .our-expert-musical-grid-sec{
+                        display: grid;
+                        grid-template-columns: repeat(1,1fr);
+                        object-fit: cover;
+                    }
+                    
+                    .our-musical-content span  {
+                        font-size: 40px;
+                       
+
+                    }
+    
+                 } 
+
+
+                 @media only screen and (min-width:576px) {
+                    .our-expert-musical-grid-sec{
+                        display: grid;
+                        grid-template-columns: repeat(1,1fr);
+                        object-fit: cover;
+                        padding: 100px;
+                    }
+                    
+                    .our-musical-content p {
+                        font-size: 40px;
+                        width: 700px;
+
+                    }
+    
+                 } 
+
+                 
+
+
+                 @media only screen and (min-width:992px) {
+                    .our-expert-musical-grid-sec{
+                        display: grid;
+                        grid-template-columns: repeat(2,1fr);
+                        object-fit: cover;
+                        padding: 0;
+                    }
+                    
+                    .our-musical-content p {
+                        font-size: 40px;
+                        width: 600px;
+
+                    }
+    
+                 } 
+                 @media only screen and (min-width:1200px) {
+                    .our-expert-musical-grid-sec{
+                        display: grid;
+                        grid-template-columns: repeat(3,1fr);
+                        object-fit: cover;
+                        padding:0;
+                        gap: 10px;
+                    }
+                  
+                    .our-musical-content p{
+                        font-size: 50px;
+                        
+        
+                    }
+                 }
+
+
+
+
+
+
+
+            /* ================================== */
+
+            .contact-us-section{
+                width: 100%;
+                padding-top: 50px;
+                background-color: rgb(25,33,30);
+                padding-bottom: 50px;
+            
+            }
+            .contact-us-container{
+                width: 90%;
+                margin: 0 auto;
+            }
+            
+             .contact-us-now-sec{
+                width: 100%;
+                height: 200px;
+                background-image: url(img/bg1.jpg) ,linear-gradient(rgba(255, 0, 0, 0.158),rgba( 0,0,0,0.237));
+                background-blend-mode: overlay;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                position: relative;
+            }
+            .contact-number{
+                width: 500px;
+            }
+            .contact-number .contact{
+                font-size: 27px;
+                color: white;
+                font-weight: bold;
+            
+            }
+            .contact-number .number{
+                font-size: 35px;
+                color: white;
+            }
+            .contact-number p{
+                color: white;
+                padding-top: 15px;
+            }
+            .contact-us-now-sec{
+                padding-top: 50px;
+                padding-left: 50px;
+                position: relative;
+            
+            }
+            
+            
+              .contact-us-now-sec-btn  .contact-us{
+                width: 180px;
+                height: 50px;
+                background-color: rgba(255, 0, 0, 0.795);
+                border-radius: 30px;
+                color: white;
+                font-weight: bold;
+                border: none;
+                position: absolute;
+                top: 100px;
+                left: 900px;
+                
+            
+              }
+             /* ====================== */
+             @media only screen and (max-width:576px) {
+                .contact-number .contact{
+                    font-size: 22px;
+                
+                }
+                .contact-number .number{
+                    font-size: 30px;
+                }
+                .contact-number{
+                    width: 215px;
+                }
+                .contact-number p{
+                    width: 400px;
+                    padding-top: 15px;
+                }
+                .contact-us-now-sec{
+                    padding-top: 20px;
+                
+                }
+            
+                .contact-us-now-sec-btn  .contact-us{
+                    width: 150px;
+                    height: 40px;
+                    top: 150px;
+                    left: 60px;
+                    
+                
+                  }
+            
+              }   
+              
+               @media only screen and (min-width:576px) {
+                .contact-number .contact{
+                    font-size: 22px;
+                
+                }
+                .contact-number .number{
+                    font-size: 30px;
+                }
+                .contact-number{
+                    width: 215px;
+                }
+                .contact-number p{
+                    width: 400px;
+                    padding-top: 15px;
+                }
+                .contact-us-now-sec{
+                    padding-top: 20px;
+                
+                }
+            
+                .contact-us-now-sec-btn  .contact-us{
+                    width: 150px;
+                    height: 40px;
+                    top: 150px;
+                    left: 60px;
+                    
+                
+                  }
+            
+              } 
+            
+            
+            
+            
+              @media only screen and (min-width:768px) {
+                .contact-number .contact{
+                    font-size: 27px;
+                
+                }
+                .contact-number .number{
+                    font-size: 35px;
+                }
+                .contact-number{
+                    width: 500px;
+                }
+                .contact-number p{
+                    width: 400px;
+                    padding-top: 20px;
+                }
+                .contact-us-now-sec{
+                    padding-top: 20px;
+                
+                }
+            
+                .contact-us-now-sec-btn  .contact-us{
+                    width: 150px;
+                    height: 40px;
+                    top: 130px;
+                    left: 60px;
+                    
+                
+                  }
+            
+              } 
+            
+              @media only screen and (min-width:992px) {
+               
+                .contact-number{
+                    width: 500px;
+                }
+                .contact-number p{
+                    width: 400px;
+                    padding-top: 20px;
+                }
+                .contact-us-now-sec{
+                    padding-top: 50px;
+                
+                }
+            
+                .contact-us-now-sec-btn  .contact-us{
+                    width: 180px;
+                    height: 50px;
+                    top: 80px;
+                    left: 650px;
+                    
+                
+                  }
+            
+              } 
+            
+            
+              @media only screen and (min-width:1200px) {
+               
+                .contact-number{
+                    width: 500px;
+                }
+                .contact-number p{
+                    width: 400px;
+                    padding-top: 20px;
+                }
+                .contact-us-now-sec{
+                    padding-top: 50px;
+                
+                }
+            
+                .contact-us-now-sec-btn  .contact-us{
+                    width: 180px;
+                    height: 50px;
+                    top: 80px;
+                    left: 850px;
+                    
+                
+                  }
+            
+              }
+
+              /* ========================================= */
+              footer{
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.87);
+                padding-top: 50px;
+                padding-bottom: 50px;
+            
+              }
+              .footer-section-container{
+                width: 90%;
+                margin: 0 auto;
+              }
+              .footer-section{
+                display: flex;
+              }
+              .fotter-section-content-sec{
+                width: 35%;
+            }
+              .footer-link-sec{
+                width: 65%;
+              }
+              .footer-link-sec{
+                display: flex;
+                justify-content: space-around;
+              }
+              .fotter-section-content-sec p{
+                width: 330px;
+                color: gray;
+                padding-top: 20px;
+                padding-left: 25px;
+                line-height: 25px;
+              }
+            
+              .footer-link-sec .p1{
+                font-size: 23px;
+                font-weight: bold;
+                color: white;
+            
+              }
+              .fotter-section-content-sec h5{
+                font-size: 23px;
+                color: white;
+                font-weight: bold;
+                padding-left: 30px;
+              }
+              .footer-social-media{
+                gap: 10px;  
+                padding: 20px;
+              }
+              .footer-social-media i{
+                padding: 15px;
+                border-radius: 50%;
+                font-size: 20px; 
+                background-color: rgb(255,76,76);
+                color: white;
+              }
+              .footer-name{
+                text-align: center;
+                color: gray;
+              }
+
+/* ========================================================= */
+
+
+
+@media only screen and (max-width:576px) {
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 100%;
+      }
+}
+
+
+@media only screen and (min-width:576px) {
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 100%;
+      }
+}
+
+@media only screen and (min-width:768px) {
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 100%;
+      }
+}
+
+
+
+@media only screen and (min-width:992px) {
+    .footer-section{
+        display: flex;
+        flex-direction: row;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 0;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 80%;
+      }
+}
+
+@media only screen and (min-width:1200px) {
+    .footer-section{
+        display: flex;
+        flex-direction: row;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 0;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 80%;
+      }
+} 
+
+

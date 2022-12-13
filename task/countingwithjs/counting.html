@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="count">  </div>
+</body>
+<script>
+    let myvalue = setInterval( valid_counting ,120);
+    let values = 50;
+
+    function valid_counting(){
+        let count =document.querySelector("#count");
+        count.innerHTML= ++values;
+        if (values == 100){
+            clearInterval(myvalue);
+        }
+
+    }
+</script>
+</html>

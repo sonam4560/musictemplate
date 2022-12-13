@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+    
+        .theme{
+            background-color:skyblue;
+            color:white;
+        }
+         body{
+            background-color: yellow;
+        }
+        .theme p{
+            color: blue;
+        }
+    </style>
+</head>
+    
+<body>
+    
+<div class="">
+    <span class="fa-solid fa-moon"></span>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maxime cupiditate ut impedit earum, tenetur rem non dolor temporibus dignissimos odit provident soluta quidem hic molestiae ea vero nisi corporis?</p>
+
+</div>
+
+
+
+
+<script>
+                    let icon = document.querySelector(".fa-moon");
+                    let bg = document.querySelector("body");
+                       
+                    icon.addEventListener("click",function(){
+                        bg.classList.toggle("theme");
+                        if ( bg.classList.contains("theme")==true){
+                            icon.classList.remove("fa-moon");
+                             icon.innerHTML="<span class='fa-solid fa-sun'></span>";
+                        }
+                             else {
+                                 icon.classList.remove("fa-sun");
+                            icon.innerHTML="<span class='fa-solid fa-moon'></span>";
+                             
+
+                             }
+                        }
+                        
+             );
+                </script>
+</body>
+</html>

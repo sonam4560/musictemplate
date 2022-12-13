@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    
+    <section class="header_section">
+        <div class="header_container">
+            <header >
+                <div class="nav-bar">
+                <div class="left-logo-section">
+                    <i class="fa-solid fa-music"></i>
+
+                </div>
+                <div class="header_nav_bar">
+                    
+                    
+                        <ul>
+                                
+                                <li><a href=""> Home</a></li>
+                                <li><a href=""> About</a></li>
+                                <li><a href=""> Pricing</a></li>
+                                <li class="list"><a href=""> Pages</a></li>
+                                <li><a href=""> contact</a></li>
+
+                        </ul>
+
+
+                    
+                  
+                
+                    
+                </div>
+                <button class="btn-bar"> 
+                    <span   class="fa-solid fa-bars"> </span>
+                </button>
+            </header>
+        </div>
+    </section>
+
+
+    <script>
+        let button= document.querySelector("btn-bar")
+        let navbar= document.querySelector("header_nav_bar")
+         button.addEventListener("click", function(){
+            navbar.classList.toggle("new-btn");   
+         });
+
+    </script>
+</body>
+</html>

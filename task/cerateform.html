@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+        span{
+            color: black;
+        }
+           
+
+        form{
+            width:700px;
+            height: 500px;
+            border: 2px solid black;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+        }
+        .name-input input{
+            width: 500px;
+        }
+       
+    </style>
+    
+</style>
+<body>
+<form action="" name="form1">
+
+    <div class="he-tag">
+        <h1> Create Your Account</h1>
+    </div>
+  <div class="name-input"> <label for=""> FirstName:</label>
+    <input type="text" name="fname"  placeholder="Enter Your Name" >
+    <span id="mess_pass"></span>
+
+    </div>
+    <br>
+    <div class="name-input">
+        <label for="" >MiddleName:</label>
+        <input type="text" name="Mname" placeholder="Enter Your Name">
+        <span id="message_pass"></span>
+        </div>
+     <br>
+    <div class="name-input">
+    <label for="" >LastName:</label>
+    <input type="text" name="Lname" placeholder="Enter Your Name">
+    <span id="message"></span>
+    </div>
+    <br>
+
+<span class="one">
+        <label for=""> Date of Birth:</label>
+        <input type="date"  name="DOBirth">
+        <span id="dateofbirth"></span>
+</span>
+    
+    <span class="class">
+    <label for="">gender:</label>
+    <label for="">female</label>
+    <input type="radio" name="gender">
+    <label for="">male</label>
+    <input type="radio" name="gender">
+    <span id="gender_mess"></span>
+    </span>
+
+<span class="one">
+    <label for=""> Experience</label>
+    <select name="selection" id="">
+        <option value="-1">---select---</option>
+        <option value="">css</option>
+        <option value="">c++</option>
+        <option value="">csc</option>
+        <option value="">bsc</option>
+        <option value="">js</option>
+    </select>
+    <span id="selection_mess"></span>
+</span>
+<br>
+<br>
+<span class="three"> 
+    <label for="">subject:</label>
+    <input type="checkbox" name="sub1">
+    <label for=""> c++</label>
+    <input type="checkbox" name="sub2">
+    <label for="">css</label>
+    <input type="checkbox" name="sub3">
+    <label for="">jquery</label>
+    <span id="check-mess"></span>
+</span>
+
+<span class="four">
+    <label for=""> email</label>
+    <input type="email" name="text1">
+    <span id="email_message"></span>
+    <br>
+</span>
+<br>
+<span>  
+    <label for="">password:</label>
+    <input type="password"  name="password" >
+    <span id="password_mess"></span>   
+</span>
+    
+    <span>
+        <label for="">Mobile Number:</label>
+        <input type="text"  name="mobile" maxlength="10">
+        <span id="mobile-mess-pass"></span>
+    </span>
+    <button  type="submit" onclick="  return form_valid()">  click here</button>
+    
+   
+
+    
+</form>
+<script>
+
+function form_valid(){
+
+
+//    email============
+let email= document.form1.text1.value;
+    if(email==""){
+        document.getElementById("email_message").innerHTML="please enter email add";
+        return false;
+        
+    }
+    else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+        document.getElementById("email_message").innerHTML="wrong";
+
+    return false;
+    }
+    else {
+
+        return  true;
+     }
+        
+
+
+    let fname= document.form1.fname.value;
+    if (fname==""){
+        document.getElementById("mess_pass").innerHTML=" Enter Name First";
+        return false; 
+    }
+    else if (!isNaN(fname)){
+        document.getElementById("mess_pass").innerHTML="number are not allowed";
+        return false;
+    }
+
+
+    let Mname=document.form1.Mname.value;
+     if(Mname==""){
+        document.getElementById("message_pass").innerHTML="Enter Last Name";
+        return false;
+     }
+     else if(!isNaN(Mname)){
+        document.getElementById("message_pass").innerHTML="number are not allowed";
+        return false;
+     }
+
+
+     let Lname=document.form1.Lname.value;
+     if(Lname==""){
+        document.getElementById("message").innerHTML="Enter Last Name";
+        return false;
+     }
+     else if(!isNaN(Lname)){
+        document.getElementById("message").innerHTML="number are not allowed";
+        return false;
+     }
+
+     let DOBirth=document.form1.DOBirth.value;
+     if (DOBirth==""){
+        document.getElementById("dateofbirth").innerHTML="fill the date";
+        return false;
+
+
+     }
+     let male=document.form1.gender[0].checked;
+     let female=document.form1.gender[1].checked;
+     if(male==false&& female==false){
+        document.getElementById("gender_mess").innerHTML="select gender";
+        return false;
+     }
+
+     let selection=document.form1.selection.value;
+     if(selection==-1){
+        document.getElementById("selection_mess").innerHTML="select experience";
+        return false;
+     }
+     let mysub1=document.form1.sub1.checked;
+     let mysub2=document.form1.sub2.checked;
+     let mysub3=document.form1.sub3.checked;
+     if( mysub1==false&&mysub2==false&&mysub3==false)
+     {
+        document.getElementById("check-mess").innerHTML="select sub";
+        return false;
+     }
+     let password = document.form1.password.value;
+       if( password  =="" ){
+        console.log(password);
+        document.getElementById("password_mess").innerHTML="Enter password";
+        return false;
+       
+    }
+       else if (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/){
+
+        document.getElementById("password_mess").innerHTML="wrong ";
+                return false;
+       }
+
+
+
+
+
+     let number=document.form1.mobile.value;
+     if(number==""){
+        document.getElementById("mobile-mess-pass").innerHTML="Enter Mobile number";
+        return false;
+        
+     }
+      else if(isNaN(number)){
+         document.getElementById("mobile-mess-pass").innerHTML="enter number";
+         return false;
+     }
+         else if( number .length<10){
+         document.getElementById("mobile-mess-pass").innerHTML="Enter 10 digit "  ; 
+         return false;
+       }
+
+
+    
+         
+
+}
+
+</script>
+</body>
+</html>

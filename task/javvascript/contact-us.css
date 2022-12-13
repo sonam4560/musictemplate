@@ -1,0 +1,818 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.back-graound-image{
+    height: 500px;
+    background-image: url(img/img3.jpg) ,linear-gradient(rgba(0, 0, 0, 0.788),rgba(0, 0, 0, 0.664)) ;
+    /* filter: brightness(110%); */
+    opacity: 95%;
+ background-blend-mode: overlay;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+}
+.top-information-header{
+background-color: rgb(44,50,64);
+display: flex;
+gap: 650px;
+padding: 20px;
+}
+.information-header{
+    display: flex;
+    gap: 20px;
+
+}
+.quection p{
+    font-weight: bold;
+    color: grey;
+
+}
+.call-div span{
+    font-weight: bold;
+    color: white;
+}
+.email-div span{
+    color: white;
+}
+.email-div span a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+
+}
+.social-media-info{
+    display: flex;
+    gap: 20px;
+}
+.social-media-info i{
+    color: white;
+}
+.musical-header{
+    display:flex;
+    gap: 500px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.479);
+
+}
+.nav{
+    display: flex;
+padding-top: 15px;
+gap: 25px;
+text-align: center;
+
+}
+
+ .list{
+    position: relative;
+}
+
+ .menu{
+    position: absolute;
+    top: 30px;
+    left: -30px;
+
+}
+.sublist{
+    padding: 15px;
+    background-color:rgba(0, 0, 0, 0.712);
+    width: 160px;
+    border-radius: 5px;
+    display: none;
+    
+}
+
+.list:hover .sublist{
+    transition: 2s ease all;
+    display: block;
+}
+
+
+.musical-logo{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white; 
+}
+.musical-logo span i{
+    color: rgba(255,76,76);
+}
+
+.musical-header .nav li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px;
+    transition: 0.6s all ease;
+
+}
+.musical-header .nav li .red{
+    color: rgba(255,76,76);
+}
+.musical-header .nav li a:hover{
+    color: rgba(255,76,76);
+}
+.musical-header li{
+    list-style: none;
+}
+.search-btn button{
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.musical-content-hero-img{
+    padding-top: 100px;
+    padding-left: 70px;
+
+}
+.musical-content-hero-img h4{
+    font-size: 20px;
+color: white;
+padding-bottom: 20px;
+}
+.musical-content-hero-img h1{
+padding-bottom: 40px;
+font-size: 75px;
+color: white;
+}
+.musical-content-hero-img button{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    background-color: rgba(255,76,76);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    transition: 0.6s all ease;
+
+}
+.musical-content-hero-img button:hover{
+background-color: skyblue;
+}
+
+
+.about-us-next-section  {
+    padding-top: 150px;
+    padding-left: 580px;
+
+}
+.about-us-next-section h1{
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+        font-family: sans-serif;
+}
+.about-us-next-section p{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+/* .about-us-next-section{
+    text-align: center;
+} */
+
+
+/*===================media query=============================== */
+
+@media only screen and (max-width:576px) {
+    .back-graound-image{
+        height: 500px;
+    
+    }
+    .top-information-header{
+    background-color: rgb(44,50,64);
+    display: flex;
+    gap: 80px;
+    padding: 30px;
+    }
+    .information-header{
+        display: flex;
+        gap:15px;
+
+    }
+    .quection p{
+        display: none;
+    }
+    .musical-logo{
+        font-size: 25px;
+    }
+   nav{
+    display: none;
+   }
+
+   .about-us-next-section  {
+    padding-top: 130px;
+    padding-left: 170px;
+
+}
+
+}
+
+@media only screen and (min-width:576px) {
+    .back-graound-image{
+        height: 500px;
+    
+    }
+    .top-information-header{
+    background-color: rgb(44,50,64);
+    display: flex;
+    gap: 80px;
+    padding: 30px;
+    }
+    .information-header{
+        display: flex;
+        gap:15px;
+
+    }
+    .quection p{
+        display: none;
+    }
+    .musical-logo{
+        font-size: 25px;
+    }
+   nav{
+    display: none;
+   }
+
+   .about-us-next-section  {
+    padding-top: 130px;
+    padding-left: 170px;
+
+}
+
+
+}
+@media only screen and (min-width:768px) {
+  
+    .top-information-header{
+    gap: 130px;
+    padding: 20px;
+    }
+    .information-header{
+        gap:15px;
+
+    }
+    .quection p{
+        display: block;
+    }
+    .musical-logo{
+        padding-top: 5px;
+        font-size: 22px;
+    }
+   nav{
+    display: block;
+   }
+
+   .about-us-next-section  {
+    padding-top: 130px;
+    padding-left: 270px;
+
+}
+.musical-header{
+    display:flex;
+    gap: 160px;
+    padding: 15px;
+}
+
+
+
+
+}
+@media only screen and (min-width:992px) {
+  
+    .top-information-header{
+    gap: 330px;
+    padding: 20px;
+    }
+    .information-header{
+        gap:15px;
+
+    }
+    .quection p{
+        display: block;
+    }
+    .musical-logo{
+        padding-top: 5px;
+        font-size: 28px;
+    }
+   nav{
+    display: block;
+   }
+
+   .about-us-next-section  {
+    padding-top: 150px;
+    padding-left: 370px;
+
+}
+.musical-header{
+    display:flex;
+    gap: 350px;
+    padding: 15px;
+}
+
+
+}
+
+/* ============================contact-page=================== */
+.contact-page-create-sec{
+    width: 100%;
+    background-color: rgb( 25,33,30);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.contact-page-create-container{
+    width: 90%;
+    margin: 0 auto;
+}
+.contact-page-create-tag{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contact-page-create-tag .contact{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.contact-page-create-tag .contact-us{
+    font-weight: lighter;
+    font-family: system-ui;
+}
+.contact-page-create-grid-sec{
+    display: flex;
+}
+.contact-page-form-sec{
+    width: 60%;
+    height: 430px;
+}
+
+
+.contact-page-information-sec{
+    width: 40%;
+
+}
+.contact-info-box{
+    width: 450px;
+    height: 400px;
+    box-shadow: 0px 0px 30px black;
+}
+.company-address-div{
+    display: flex;
+    padding-left: 15px;
+    padding-top: 30px;
+
+}
+.contact-content-box h3{
+    color: white;
+
+}
+.contact-content-box p{
+    padding-top: 5px;
+    color: gray;
+}
+.company-address-div i{
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 50%;
+    color: rgb(255, 76,76);
+    font-weight: bold;
+}
+
+.name-section input{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px; 
+    font-size: 15px;
+    font-weight: lighter;
+    font-size: 17px;
+    font-family: sans-serif;
+    
+}
+
+.sub-section input{
+    width: 610px;
+    height: 60px;
+    border-radius: 10px; 
+    font-size: 15px;
+    font-weight: lighter;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.text-area input{
+    width:610px ;
+    height: 170px;
+    border-radius: 10px; 
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.send-message-btn button{
+    border-radius: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    background-color: rgb( 255,76,76);
+    font-weight: bold;
+
+}
+input{
+    background-color: rgb(14,18,16);
+    border:1px solid grey;
+}
+.name-section{
+    padding: 10px;
+}
+.sub-section{
+    padding: 10px;
+}
+.text-area{
+    padding: 10px;
+}
+.send-message-btn{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
+/* ===========================media query======================= */
+  @media only screen and (max-width:576px) {
+
+    .contact-page-create-grid-sec{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-section input{
+        width: 250px;
+        height: 50px;
+    
+    }
+
+    .sub-section input{
+        width: 500px;
+        height: 60px;
+        font-size: 15px;
+    }
+    .name-section{
+        display: flex;
+        gap: 10px;
+        margin-left: 20px;
+    }
+    .text-area input{
+        width:500px ;
+        height: 100px;
+    }
+    .contact-page-information-sec{
+        padding-top: 80px;
+        margin-left: 30px;
+    }
+   
+}
+@media only screen and (min-width:576px) {
+
+    .contact-page-create-grid-sec{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-section input{
+        width: 250px;
+        height: 50px;
+    
+    }
+
+    .sub-section input{
+        width: 500px;
+        height: 60px;
+        font-size: 15px;
+    }
+    .name-section{
+        display: flex;
+        gap: 10px;
+        margin-left: 20px;
+    }
+    .text-area input{
+        width:500px ;
+        height: 100px;
+    }
+    .contact-page-information-sec{
+        padding-top: 80px;
+        margin-left: 30px;
+    }
+
+   
+}
+@media only screen and (min-width:768px) {
+
+    .contact-page-create-grid-sec{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-section input{
+        width: 650px;
+        height: 50px;
+    
+    }
+
+    .sub-section input{
+        width: 650px;
+        height: 60px;
+        font-size: 15px;
+    }
+    .name-section{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+    }
+    .text-area input{
+        width:650px ;
+        height: 100px;
+    }
+    .contact-page-information-sec{
+        padding-top: 140px;
+        margin-left: 150px;
+    }
+   
+}
+@media only screen and (min-width:992px) {
+
+
+    .contact-info-box{
+        width: 350px;
+        height: 400px;
+    }
+
+   
+    .contact-page-create-grid-sec{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .name-section input{
+        width:250px;
+        height: 50px;
+    
+    }
+
+    .sub-section input{
+        width: 530px;
+        height: 60px;
+        font-size: 15px;
+    }
+    .name-section{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-left: 10px;
+    }
+    .text-area input{
+        width:530px ;
+        height: 100px;
+    }
+    .contact-page-information-sec{
+        padding-top: 0;
+        margin-left: 0;
+    }
+   
+}  
+
+
+ @media only screen and (min-width:1200px) {
+
+
+    .contact-info-box{
+        width: 450px;
+        height: 400px;
+    }
+   
+   
+    .contact-page-create-grid-sec{
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .name-section input{
+        width:300px;
+        height: 50px;
+    
+    }
+    .sub-section input{
+        width: 610px;
+        height: 60px;
+    }
+    .name-section{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-left: 10px;
+    }
+    .text-area input{
+        width:610px ;
+        height: 170px;
+    }
+
+    .contact-page-information-sec{
+        padding-top: 0;
+        margin-left: 0;
+        
+    }
+   
+
+} 
+
+
+
+
+/* ================================== */
+
+
+  footer{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+  .footer-section-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer-section{
+    display: flex;
+  }
+  .fotter-section-content-sec{
+    width: 35%;
+}
+  .footer-link-sec{
+    width: 65%;
+  }
+  .footer-link-sec{
+    display: flex;
+    justify-content: space-around;
+  }
+  .fotter-section-content-sec p{
+    width: 330px;
+    color: gray;
+    padding-top: 20px;
+    padding-left: 25px;
+    line-height: 25px;
+  }
+
+  .footer-link-sec .p1{
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+
+  }
+  .fotter-section-content-sec h5{
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+    padding-left: 30px;
+  }
+  .footer-social-media{
+    gap: 10px;  
+    padding: 20px;
+  }
+  .footer-social-media i{
+    padding: 15px;
+    border-radius: 50%; 
+    background-color: rgb(255,76,76);
+    font-size: 20px;
+    color: white;
+  }
+  .footer-name{
+    text-align: center;
+    color: gray;
+  }
+
+
+
+  /* =======================================media query=========================== */
+
+
+
+
+
+
+@media only screen and (max-width:576px) {
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 100%;
+      }
+}
+
+
+@media only screen and (min-width:576px) {
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 100%;
+      }
+}
+
+@media only screen and (min-width:768px) {
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 20px;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 100%;
+      }
+}
+
+
+
+@media only screen and (min-width:992px) {
+    .footer-section{
+        display: flex;
+        flex-direction: row;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 0;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 80%;
+      }
+}
+
+@media only screen and (min-width:1200px) {
+    .footer-section{
+        display: flex;
+        flex-direction: row;
+      }
+      .footer-link-sec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 15px;
+        padding: 0;
+      }
+
+      .fotter-section-content-sec{
+        width: 100%;
+      }
+      .fotter-section-content-sec p{
+        width: 80%;
+      }
+} 
